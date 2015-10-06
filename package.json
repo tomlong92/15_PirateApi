@@ -1,0 +1,16 @@
+{
+  "name": "tom-herokudeploy",
+  "version": "1.0.0",
+  "description": "CodeAbode exercise to practice building APIs",
+  "main": "app.js",
+  "dependencies": {
+    "case": "^1.2.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Long",
+  "license": "ISC"
+}
