@@ -43,4 +43,6 @@ console.log(dictionary.translate(" work yeah with wine woman,"));
 var staticHandler = express.static(publicPath);
 app.use(staticHandler);
 
-app.listen(8080);
+var envPort = process.env.PORT;
+if (envPort !== undefined) app.listen(envPort);
+	else app.listen(8080);

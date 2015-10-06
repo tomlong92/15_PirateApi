@@ -1,5 +1,5 @@
 {
-  "name": "tom-herokudeploy",
+  "name": "tom-pirateapi",
   "version": "1.0.0",
   "description": "CodeAbode exercise to practice building APIs",
   "main": "app.js",
@@ -9,6 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tom Long",
