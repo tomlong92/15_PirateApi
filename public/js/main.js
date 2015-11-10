@@ -1,18 +1,9 @@
 /*
-	Pirate Translation API: The Client
-
-	Client-Side Cheatsheet
-	======================
-	document.getElementById("id")
-	form.elements["name"]
-	form.onsumbit = ...
-	event.preventDefault()
-	inputElement.value
+	Pirate Translation API: The Client Side
 */
 
-
 // _____________________________________________________________________________
-// Setting up API requests
+// Set up API requests
 
 var pirateEndPoint = "/piratespeak";
 
@@ -21,19 +12,20 @@ var pirateParameters = {
 };
 
 // _____________________________________________________________________________
-// Getting elements from the DOM
+// Get elements from the DOM
 
 var form = document.getElementById("translate-form");
 var input = form.elements["english-text"];
 var output = document.getElementById("pirate-text");
 
 // _____________________________________________________________________________
-// Setting up the events so that the APIs are called when a query is submitted 
+// Set up the events so that the APIs are called when a query is submitted 
 // with the form
 
 function callPirate(event) {
 	event.preventDefault();
 	var pirateInput = input.value;
+	// Call the API
 	pirateParameters.text = pirateInput;
 	var pirateApiCaller = new ApiCaller(pirateEndPoint, pirateParameters);
 	pirateApiCaller.getJson(printPirateSpeak);

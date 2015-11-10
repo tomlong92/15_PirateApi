@@ -1,12 +1,7 @@
 /*
 	Pirate Translation Dictionary
 
-	This should look familiar :)
-
-	We don't want to clutter up app.js, so we're going to create a module.  
-	In node, modules are like functions - they have local scope.  Variables we 
-	define here are not accessible from other files (e.g. app.js) UNLESS they 
-	are put on the "module.exports" property.
+	Create a module
 */
 
 module.exports = {};

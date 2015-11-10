@@ -1,7 +1,7 @@
 /*
 	Node Server
 
-	This server dudette sends static files at localhost:8080/ and acts as an API
+	This server sends static files at localhost:8080/ and acts as an API
 	at localhost:8080/piratespeak
 */
 
